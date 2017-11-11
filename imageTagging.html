@@ -1,0 +1,166 @@
+<html>
+  <head>
+    <title>Image Tagging with jQuery and PHP</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets\taggingStylesheet.css">
+    <script type="text/javascript" src="scripts\taggingScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets\style.css">
+  </head>
+  <body>
+    <div id='main_panel'>
+
+      <div style='margin: auto; width: 600px;'>
+        <div id='image_panel' >
+          <div id='imageDiv'> <img src='images\classroom.jpg' id='imageMap'  /> </div>
+          <div id='mapper' ><img src='images\save.png' onclick='openDialog()' /></div>
+
+          <div id="planetmap">
+
+            <!-- English tags -->
+              <div class="tagged english laptop" style="width: 100px; height: 46px; left: 92px; top: 353px; border: none;">
+                <div class="tagged_box" style="width: 100px; height: 46px; display: none;"></div>
+                <div class="tagged_title" style="top: 51px; display: none;">Laptop</div>
+              </div>
+
+              <div class="tagged english map" style="width: 160px; height: 118px; left: 384px; top: 73px; border: none;">
+                <div class="tagged_box" style="width: 160px; height: 118px; display: none;"></div>
+                <div class="tagged_title" style="top: 123px; display: none;">Map</div>
+              </div>
+
+              <div class="tagged english desk" style="width: 202px; height: 66px; left: 218px; top: 289px; border: none;">
+                <div class="tagged_box" style="width: 202px; height: 66px; display: none;"></div>
+                <div class="tagged_title" style="top: 71px; display: none;">Desk</div>
+              </div>
+
+              <div class="tagged english computer" style="width: 52px; height: 56px; left: 96px; top: 207px; border: none;">
+                <div class="tagged_box" style="width: 52px; height: 56px; display: none;"></div>
+                <div class="tagged_title" style="top: 61px; display: none;">Computer</div>
+              </div>
+
+              <div class="tagged english poster" style="width: 62px; height: 104px; left: 312px; top: 40px; border: none;">
+                <div class="tagged_box" style="width: 62px; height: 104px; display: none;"></div>
+                <div class="tagged_title" style="top: 109px; display: none;">Poster</div>
+              </div>
+
+              <!-- Spanish tags -->
+              <div class="tagged spanish laptop" style="width: 100px; height: 46px; left: 92px; top: 353px; border: none;">
+                <div class="tagged_box" style="width: 100px; height: 46px; display: none;"></div>
+                <div class="tagged_title" style="top: 51px; display: none;">Ordenador portátil</div>
+              </div>
+
+              <div class="tagged spanish map" style="width: 160px; height: 118px; left: 384px; top: 73px; border: none;">
+                <div class="tagged_box" style="width: 160px; height: 118px; display: none;"></div>
+                <div class="tagged_title" style="top: 123px; display: none;">Mapa</div>
+              </div>
+
+              <div class="tagged spanish desk" style="width: 202px; height: 66px; left: 218px; top: 289px; border: none;">
+                <div class="tagged_box" style="width: 202px; height: 66px; display: none;"></div>
+                <div class="tagged_title" style="top: 71px; display: none;">Escritorio</div>
+              </div>
+
+              <div class="tagged spanish computer" style="width: 52px; height: 56px; left: 96px; top: 207px; border: none;">
+                <div class="tagged_box" style="width: 52px; height: 56px; display: none;"></div>
+                <div class="tagged_title" style="top: 61px; display: none;">Computadora</div>
+              </div>
+
+              <div class="tagged spanish poster" style="width: 62px; height: 104px; left: 312px; top: 40px; border: none;">
+                <div class="tagged_box" style="width: 62px; height: 104px; display: none;"></div>
+                <div class="tagged_title" style="top: 109px; display: none;">Póster</div>
+              </div>
+
+              <!--Italian tags-->
+              <div class="tagged italian laptop" style="width: 100px; height: 46px; left: 92px; top: 353px; border: none;">
+                <div class="tagged_box" style="width: 100px; height: 46px; display: none;"></div>
+                <div class="tagged_title" style="top: 51px; display: none;">Computer portatile</div>
+              </div>
+
+              <div class="tagged italian map" style="width: 160px; height: 118px; left: 384px; top: 73px; border: none;">
+                <div class="tagged_box" style="width: 160px; height: 118px; display: none;"></div>
+                <div class="tagged_title" style="top: 123px; display: none;">Carta geografica</div>
+              </div>
+
+              <div class="tagged italian desk" style="width: 202px; height: 66px; left: 218px; top: 289px; border: none;">
+                <div class="tagged_box" style="width: 202px; height: 66px; display: none;"></div>
+                <div class="tagged_title" style="top: 71px; display: none;">Scrivania</div>
+              </div>
+
+              <div class="tagged italian computer" style="width: 52px; height: 56px; left: 96px; top: 207px; border: none;">
+                <div class="tagged_box" style="width: 52px; height: 56px; display: none;"></div>
+                <div class="tagged_title" style="top: 61px; display: none;">Computer</div>
+              </div>
+
+              <div class="tagged italian poster" style="width: 62px; height: 104px; left: 312px; top: 40px; border: none;">
+                <div class="tagged_box" style="width: 62px; height: 104px; display: none;"></div>
+                <div class="tagged_title" style="top: 109px; display: none;">Manifesto</div>
+              </div>
+
+          </div>
+
+          <div id='form_panel'>
+            <div class='row'>
+              <div class='label'>Title</div><div class='field'><input type='text' id='title' /></div>
+            </div>
+            <div class='row'>
+              <div class='label'></div>
+              <div class='field'>
+                <input type='button' value='Add Tag' onclick='addTag()' />
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div style="background: none repeat scroll 0 0 #AB3939;
+                 border: 1px solid #FFFFFF;
+                 clear: both;
+                 margin: 20px auto;
+                 padding: 20px 0;
+                 text-align: center;
+                 width: 600px;">
+                <input type="button" value="Show Tags" onclick="showTags()" />
+                <input type="button" value="Hide Tags" onclick="hideTags()" />
+                <!-- test -->
+                <input type="button" value="Save Tags" onclick="saveTags()" />
+
+                <div class="dropdown">
+                  <button class="dropbtn">Vocabulary Games</button>
+                  <div class="dropdown-content">
+                    <a href="#">Easy</a>
+                    <a href="#">Medium</a>
+                    <a href="#">Hard</a>
+                </div>
+      </div>
+    </div>
+
+    <div style="background: none repeat scroll 0 0 #AB3939;
+               border: 1px solid #FFFFFF;
+               clear: both;
+               margin: 20px auto;
+               padding: 20px 0;
+               text-align: center;
+               width: 600px;">
+
+
+              <div class="dropdown">
+                <label style="font-weight: bold; color: #D69A33">From:</label>
+                <select id='from'>
+                  <option value='english'>English</option>
+                  <option value='spanish'>Spanish</option>
+                  <option value='italian'>Italian</option>
+                </select>
+
+                <label style="font-weight: bold; color: #D69A33">To:</label>
+                <select id='to'>
+                  <option value='english'>English</option>
+                  <option value='spanish'>Spanish</option>
+                  <option value='italian'>Italian</option>
+                </select>
+              </div>
+              <input type="button" value="Translate" onclick="translation()" />
+    </div>
+
+  </body>
+</html>
